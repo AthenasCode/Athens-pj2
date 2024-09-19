@@ -2,7 +2,7 @@
 import { Main } from "../layout/Main";
 //import { User } from "../types/stakeholders.type";
 
-export function About() {
+export function PLP() {
   //const [isLoading, setIsLoading] = useState(false);
   //const [isSuccess, setIsSuccess] = useState(false);
   //const [isError, setIsError] = useState(false);
@@ -34,7 +34,7 @@ export function About() {
     <Main>
       <section>
         <h1>
-          ESTO ES ABOUT.TSX
+          ESTO ES PLP.TSX
         </h1>
         <p>
           asgdbyuiasbdiawbfdiauhdniuwand

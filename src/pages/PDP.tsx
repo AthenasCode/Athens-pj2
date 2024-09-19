@@ -3,7 +3,7 @@ import { Main } from "../layout/Main";
 import { CoursesPropsType } from "../types/course.type";
 import { CourseDetail } from "../components/CourseDetail";
 
-export function Courses({ courses }: CoursesPropsType) {
+export function PDP({ courses }: CoursesPropsType) {
   const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -19,7 +19,7 @@ export function Courses({ courses }: CoursesPropsType) {
     <Main>
       <section>
         <h1>
-          ESTO ES COURSES.TSX
+          ESTO ES PDP.TSX
         </h1>
         <p>
           Ejemplo de uso accediendo a la data.ts como parámetro desde routes.tsx

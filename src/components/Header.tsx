@@ -12,10 +12,13 @@ export function Header() {
           <Link to="/">Home</Link>
         </div>
         <div >
-          <Link to="/about">About</Link>
+          <Link to="/PDP">PDP</Link>
         </div>
         <div >
-          <Link to="/course">Course</Link>
+          <Link to="/PLP">PLP</Link>
+        </div>
+        <div >
+          <Link to="/Cart">Cart</Link>
         </div>
       </div>
       
