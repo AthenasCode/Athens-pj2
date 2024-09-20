@@ -9,16 +9,16 @@ export function Header() {
       <div >
         
         <div >
-          <Link to="/">Home</Link>
+          <Link to="/Athens-pj2/">Home</Link>
         </div>
         <div >
-          <Link to="/PDP">PDP</Link>
+          <Link to="/Athens-pj2/PDP">PDP</Link>
         </div>
         <div >
-          <Link to="/PLP">PLP</Link>
+          <Link to="/Athens-pj2/PLP">PLP</Link>
         </div>
         <div >
-          <Link to="/Cart">Cart</Link>
+          <Link to="/Athens-pj2/Cart">Cart</Link>
         </div>
       </div>
       

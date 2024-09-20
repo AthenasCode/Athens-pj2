@@ -7,19 +7,19 @@ import { courses } from "../utils/data";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Athens-pj2/",
     element: <Home />,
   },
   {
-    path: "/PLP",
+    path: "/Athens-pj2/PLP",
     element: <PLP />,
   },
   {
-    path: "/PDP",
+    path: "/Athens-pj2/PDP",
     element: <PDP courses={courses} />,
   },
   {
-    path: "/Cart",
+    path: "/Athens-pj2/Cart",
     element: <Cart/>,
   },
 ]);
