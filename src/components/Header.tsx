@@ -1,4 +1,7 @@
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
+import Logo from '../assets/logo.png';
+import flecha from '../assets/arrow-icon.svg';
+
 
 const Header = () => {
   return (
@@ -6,7 +9,7 @@ const Header = () => {
       <nav>
         <div className="nav-bar">
           <div>
-            <img src="img/logo.png" alt="Logo Athens" width="200px" />
+          <img src= {Logo} alt="Logo Athens" width="200px" />
           </div>
           <div>
             <div className="center-menu">
