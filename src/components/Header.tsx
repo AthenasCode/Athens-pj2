@@ -1,6 +1,5 @@
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 import Logo from '../assets/logo.png';
-import flecha from '../assets/arrow-icon.svg';
 
 
 const Header = () => {
