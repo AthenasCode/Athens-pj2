@@ -1,6 +1,7 @@
 import { Main } from "../layout/Main";
 import Card from "../components/Card";
-import { homepageItems } from "../utils/data";
+import { adImage, homepageItems } from "../utils/data";
+import AdImage from "../components/AdImage";
 export function Home() {
   return (
     <Main>
@@ -18,6 +19,13 @@ export function Home() {
             />
           ))}
         </div>
+      </section>
+      <section>
+        <AdImage
+          image={adImage[0].image}
+          text={adImage[0].text}
+          buttonLink={adImage[0].buttonLink}
+        />
       </section>
     </Main>
   );
