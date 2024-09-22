@@ -1,5 +1,6 @@
 import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import Header from '../components/Header';
+import  SubHeader  from "../components/SubHeader";
 import '../components/styles.css';
 
 export const Main = ({ children }: { children: React.ReactNode }) => {
@@ -7,6 +8,7 @@ export const Main = ({ children }: { children: React.ReactNode }) => {
     <>
       <div >
         <Header />
+        <SubHeader />
         <main>
           {children}
         </main>
