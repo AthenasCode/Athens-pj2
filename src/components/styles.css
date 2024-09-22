@@ -56,7 +56,7 @@ input {
   background: var(--tertiary-color);
   border-radius: var(--border-radius);
 }
-.secondary {
+.secondary, .secondary a {
     color: white;
     background: var(--secondary-color);
     transition: all .5s;
@@ -308,8 +308,7 @@ a{
 }
 .card p {
   font-size: 0.9em;
-  margin: 0 0 16px;
-  height: 120px; /* Ajusta esta altura según tus necesidades */
+  margin: 0 0 16px; /* Ajusta esta altura según tus necesidades */
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -476,7 +475,7 @@ h4{
   margin-bottom: 50px;
 }
 
-.products .productsList {
+.productsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -590,7 +589,6 @@ footer {
   width: 100%;
   display: inline-block;
   color: #ffffff;
-  position: fixed;
   line-height: 1; 
   padding: 0; 
 }
@@ -814,6 +812,7 @@ p{
     width: 100%;
     border-radius: var(--border-radius);
     aspect-ratio: 1/1;
+    object-fit: contain;
 }
 .imgpdp img{
   width: 65%;

@@ -1,15 +1,23 @@
 import { Main } from "../layout/Main";
-
+import Card from "../components/Card";
+import { homepageItems } from "../utils/data";
 export function Home() {
   return (
     <Main>
-      <section>
-        <h1>
-          ESTO ES HOME.TSX
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam nobis sint, iusto dignissimos rem quo eligendi praesentium voluptate. Laudantium nobis voluptatem odio illo labore optio numquam perspiciatis reiciendis. Odio?
-        </p>
+      <section className="container">
+        <h2>¡Mira los mejores productos que tenemos!</h2>
+        <div className="productsList">
+          {homepageItems.map((product) => (
+            <Card
+              image={"" + product.image}
+              title={"" + product.title}
+              description={"" + product.description}
+              price={product.original_price}
+              discountPrice={product.discounted_price}
+              buttonLink={"#"}
+            />
+          ))}
+        </div>
       </section>
     </Main>
   );
