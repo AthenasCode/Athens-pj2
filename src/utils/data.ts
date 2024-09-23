@@ -347,6 +347,7 @@ export const homepageItems = [
     discount: 20
   }
 ];
+
 export const adImage = [
   {
     image: "https://athenascode.github.io/Athens/img/venta.jpg",
@@ -362,8 +363,14 @@ export const adImage = [
     image: "https://athenascode.github.io/Athens/img/image1.jpg",
     text: "Grandes descuentos en tablets, teléfonos y mucha más tecnología",
     buttonLink: "#"
+  },
+  {
+    image: "https://athenascode.github.io/Athens/img/image2.jpg",
+    text: "Grandes descuentos en tablets, teléfonos y mucha más tecnología",
+    buttonLink: "#"
   }
 ]
+
 
 export const linksbread = [
   {

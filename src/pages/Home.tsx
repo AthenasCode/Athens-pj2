@@ -3,11 +3,17 @@ import Card from "../components/Card";
 import Breadcrumb from "../components/Breadcrumb";
 import { adImage, homepageItems, linksbread } from "../utils/data";
 import AdImage from "../components/AdImage";
+import Banner from "../components/banner";
 export function Home() {
   return (
     <Main>
+
+      <Banner />
       <Breadcrumb links={[linksbread[0]]}/>
       <section className="container">
+
+
+
         <h2>¡Mira los mejores productos que tenemos!</h2>
         <div className="productsList">
           {homepageItems.map((product) => (
@@ -22,6 +28,7 @@ export function Home() {
           ))}
         </div>
       </section>
+
       <section>
         <AdImage
           image={adImage[0].image}
