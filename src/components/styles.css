@@ -234,6 +234,7 @@ a{
     display: none;
     /*POR AHORA*/
   }
+  
   .hamburger-menu {
     display:flex !important;
     flex-direction: column;

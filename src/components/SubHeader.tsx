@@ -1,48 +1,67 @@
+import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
 import arrow from '../assets/arrow-icon.svg';
+import { menuItems } from "../utils/data";
+import { Link } from "react-router-dom";  // Importar Link de react-router-dom
 
-const SubHeader = () => {
-  return (
+const SubHeader: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
+  const toggleMenu = (): void => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const renderDesktopMenu = (): JSX.Element => (
     <div className="subnavbar">
-      <div className="item">
-        <h3>Tecnología</h3>
-        <img src= {arrow} alt="Icono de Flecha" id="1" />
-        <ul className="dropdown" id="dropdown-1">
-          <li><a href="#">Computadores</a></li>
-          <li><a href="#">Televisores</a></li>
-          <li><a href="#">Audio</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="#">Impresión</a></li>
-          <li><a href="#">Cámaras</a></li>
-        </ul>
+      {menuItems.map((category, index) => (
+        <div className="item" key={index}>
+          <h3>{category.title}</h3>
+          <img
+            src={arrow}
+            alt="Icono de Flecha"
+            role="button"
+            aria-label={`Abrir menú ${category.title}`}
+          />
+          <ul className="dropdown">
+            {category.items.map((item, itemIndex) => (
+              <li key={itemIndex}>
+                <Link to={item.link}>{item.label}</Link>  {/* Aquí se usa Link con el enlace */}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderMobileMenu = (): JSX.Element => (
+    <div className="hamburger-menu">
+      <label htmlFor="check" className="checkbtn">
+        <FaBars onClick={toggleMenu} />
+      </label>
+      <input type="checkbox" id="check" checked={menuOpen} onChange={toggleMenu} />
+      <div className="mobile-menu">
+        {menuItems.map((category, index) => (
+          <details key={index}>
+            <summary>{category.title}</summary>
+            <ul>
+              {category.items.map((item, itemIndex) => (
+                <li key={itemIndex}>
+                  <Link to={item.link}>{item.label}</Link>  {/* También aquí se usa Link con el enlace */}
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
       </div>
-      <div className="item">
-        <h3>Electrodomésticos</h3>
-        <img src={arrow} alt="Icono de Flecha" id="2" />
-        <ul className="dropdown" id="dropdown-2">
-          <li><a href="#">Climatización</a></li>
-          <li><a href="#">Refrigeración</a></li>
-          <li><a href="#">Lavadoras/Secadoras</a></li>
-        </ul>
-      </div>
-      <div className="item">
-        <h3>Celulares</h3>
-        <img src={arrow} alt="Icono de Flecha" id="3" />
-        <ul className="dropdown" id="dropdown-3">
-          <li><a href="PLP.html">Smartwatch</a></li>
-          <li><a href="#">Tabletas</a></li>
-          <li><a href="#">Celulares</a></li>
-        </ul>
-      </div>
-      <div className="item">
-        <h3>Hogar</h3>
-        <img src={arrow} alt="Icono de Flecha" id="4" />
-        <ul className="dropdown" id="dropdown-4">
-          <li><a href="#">Salas</a></li>
-          <li><a href="#">Comedor</a></li>
-          <li><a href="#">Cocina</a></li>
-          <li><a href="#">Baño</a></li>
-        </ul>
-      </div>
+    </div>
+  );
+
+  return (
+    <div className="subheader-wrapper">
+      {isMobile ? renderMobileMenu() : renderDesktopMenu()}
     </div>
   );
 };
