@@ -249,8 +249,7 @@ export const courses = [
     ],
   },
 ];
-<<<<<<< Updated upstream
-=======
+
 export const homepageItems = [
   {
     title: "Samsung Galaxy S23",
@@ -389,19 +388,19 @@ export const linksbread = [
 export const menuItems = [
   {
     title: 'Tecnología',
-    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras']
+    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras'],
   },
   {
     title: 'Electrodomésticos',
-    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras']
+    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras'],
   },
   {
     title: 'Celulares',
-    items: ['Smartwatch', 'Tabletas', 'Celulares']
+    items: ['Smartwatch', 'Tabletas', 'Celulares'],
   },
   {
     title: 'Hogar',
-    items: ['Salas', 'Comedor', 'Cocina', 'Baño']
-  }
+    items: ['Salas', 'Comedor', 'Cocina', 'Baño'],
+  },
 ];
->>>>>>> Stashed changes
+

@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Athens E-commerce Website 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 Descripción
+Este proyecto consiste en el desarrollo de un sitio web e-commerce para una empresa del sector retail. Enfocada en la maquetación estática para evaluar el diseño inicial antes de proceder a fases posteriores con funcionalidades más complejas.
 
-Currently, two official plugins are available:
+El sitio incluye diversas páginas con un diseño responsive optimizado para dispositivos móviles. La interfaz ofrece una experiencia de usuario intuitiva y fácil navegación a través de varias secciones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías Utilizadas
+![HTML](https://img.shields.io/badge/Html-20232A?style=for-the-badge&logo=html5&logoColor=orange&color=white)
+![CSS](https://img.shields.io/badge/CSS-20232A?style=for-the-badge&logo=css3&logoColor=%233899e3&color=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Expanding the ESLint configuration
+## 📑 Contenido del Sitio
+El sitio web contiene las siguientes páginas y características:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🖥️ **Header y Footer**
+Header: Incluye el logo de la empresa, un campo de búsqueda, y links a "Mi cuenta" y "Carrito".
+Footer: Contiene la razón social, redes sociales y medios de pago, así como un mapa del sitio.
+- 🏠 **Página de Inicio**
+Promociones: Dos imágenes promocionales de productos con descuento.
+Productos Destacados: Grid de 12 productos destacados con imagen, nombre, precios, y botón de agregar al carrito.
+Banner Publicitario: Un banner sobre un producto destacado.
+- 📃 **Página de Lista de Productos (PLP)**
+Navegación: Incluye migas de pan (breadcrumb) y caja de filtros con categorías y opciones.
+Listado de Productos: Detalles del producto, incluyendo imagen, nombre, calificación, y precio.
+Ordenar: Opciones para ordenar por relevancia, fecha de carga, y precio.
+- 📄 **Página de Descripción de Producto (PDP)**
+Detalles del Producto: Incluye nombre, imagen, descripción, y especificaciones técnicas en formato tabla.
+Productos Relacionados: Sección de productos que podrían interesar al usuario.
+- 🛒 **Página de Carrito de Compras**
+Carrito: Listado de productos seleccionados, opciones de envío, y resumen de la compra con totales e impuestos.
 
-- Configure the top-level `parserOptions` property like this:
+## 🌐 Cómo Visualizar el Proyecto
+Para visualizar este proyecto solo debe ingresar al link 👇:
+https://athenascode.github.io/Athens-pj2/
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 👥 Integrantes
+1. María Camila Gómez: Rol (Frontend Developer)
+2. Roberto Rocha: Rol (Frontend Developer, QA)
+3. Rafael Martinez: Rol (Frontend Developer, TL)
+4. Santiago Romero: Rol (Frontend Developer)
+5. Freddy Fajardo: Rol (Frontend Developer)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📋 Licencia
+Este proyecto es de código abierto y se puede usar, modificar y distribuir de acuerdo con los términos de la licencia incluida en el repositorio.

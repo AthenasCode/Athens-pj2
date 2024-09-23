@@ -4,33 +4,7 @@ import { FaBars } from 'react-icons/fa';
 import arrow from '../assets/arrow-icon.svg';
 import { menuItems } from "../utils/data";
 
-<<<<<<< Updated upstream
-interface MenuItem {
-  title: string;
-  items: string[];
-}
 
-const menuItems: MenuItem[] = [
-  {
-    title: 'Tecnología',
-    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras']
-  },
-  {
-    title: 'Electrodomésticos',
-    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras']
-  },
-  {
-    title: 'Celulares',
-    items: ['Smartwatch', 'Tabletas', 'Celulares']
-  },
-  {
-    title: 'Hogar',
-    items: ['Salas', 'Comedor', 'Cocina', 'Baño']
-  }
-];
-
-=======
->>>>>>> Stashed changes
 const SubHeader: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });

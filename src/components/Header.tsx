@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <div className="nav-bar">
           <div>
-          <img src= {Logo} alt="Logo Athens" width="200px" />
+            <img src={Logo} alt="Logo Athens" width="200px" />
           </div>
           <div>
             <div className="center-menu">
@@ -20,12 +20,25 @@ const Header = () => {
             <div className="right-menu">
               <FaUser />
               <a
+                href="#"
+                className="hover-button"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: "100%",
+                }}
               >
                 Mi cuenta
               </a>
               <FaShoppingCart />
               <a
-                
+                href="cart.html"
+                className="hover-button"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: "100%",
+                }}
               >
                 Carrito
               </a>
