@@ -42,8 +42,7 @@ const SubHeader: React.FC = () => {
       <label htmlFor="check" className="checkbtn">
         <FaBars onClick={toggleMenu} />
       </label>
-      <input type="checkbox" id="check" checked={menuOpen} onChange={toggleMenu} />
-      <div className="mobile-menu">
+      <div className="mobile-menu" style={{ display: menuOpen ? 'block' : 'none' }}>
         {menuItems.map((category, index) => (
           <details key={index}>
             <summary>{category.title}</summary>
