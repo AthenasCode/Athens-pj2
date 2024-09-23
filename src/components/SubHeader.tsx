@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FaBars } from 'react-icons/fa';
@@ -15,42 +16,47 @@ const SubHeader: React.FC = () => {
 
   const renderDesktopMenu = (): JSX.Element => (
     <div className="subnavbar">
-      {menuItems.map((category, index) => (
-        <div className="item" key={index}>
-          <h3>{category.title}</h3>
-          <img
-            src={arrow}
-            alt="Icono de Flecha"
-            role="button"
-            aria-label={`Abrir menú ${category.title}`}
-          />
-          <ul className="dropdown">
-            {category.items.map((item, itemIndex) => (
-              <li key={itemIndex}><a href="#">{item}</a></li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
 
-  const renderMobileMenu = (): JSX.Element => (
-    <div className="hamburger-menu">
-      <label htmlFor="check" className="checkbtn">
-        <FaBars onClick={toggleMenu} />
-      </label>
-      <input type="checkbox" id="check" checked={menuOpen} onChange={toggleMenu} />
-      <div className="mobile-menu">
-        {menuItems.map((category, index) => (
-          <details key={index}>
-            <summary>{category.title}</summary>
-            <ul>
-              {category.items.map((item, itemIndex) => (
-                <li key={itemIndex}><a href="#">{item}</a></li>
-              ))}
-            </ul>
-          </details>
-        ))}
+      <div className="item">
+        <h3>Tecnología</h3>
+        <img src={arrow} alt="Icono de Flecha" id="1" />
+        <ul className="dropdown" id="dropdown-1">
+          <li><Link to="/Athens-pj2/PLP?category=computadores">Computadores</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=televisores">Televisores</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=audio">Audio</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=video">Video</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=impresion">Impresión</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=camaras">Cámaras</Link></li>
+        </ul>
+      </div>
+      <div className="item">
+        <h3>Electrodomésticos</h3>
+        <img src={arrow} alt="Icono de Flecha" id="2" />
+        <ul className="dropdown" id="dropdown-2">
+          <li><Link to="/Athens-pj2/PLP?category=climatizacion">Climatización</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=refrigeracion">Refrigeración</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=lavadoras">Lavadoras/Secadoras</Link></li>
+        </ul>
+      </div>
+      <div className="item">
+        <h3>Celulares</h3>
+        <img src={arrow} alt="Icono de Flecha" id="3" />
+        <ul className="dropdown" id="dropdown-3">
+          <li><Link to="/Athens-pj2/PLP?category=smartwatch">Smartwatch</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=tabletas">Tabletas</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=celulares">Celulares</Link></li>
+        </ul>
+      </div>
+      <div className="item">
+        <h3>Hogar</h3>
+        <img src={arrow} alt="Icono de Flecha" id="4" />
+        <ul className="dropdown" id="dropdown-4">
+          <li><Link to="/Athens-pj2/PLP?category=salas">Salas</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=comedor">Comedor</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=cocina">Cocina</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=baño">Baño</Link></li>
+        </ul>
+
       </div>
     </div>
   );
