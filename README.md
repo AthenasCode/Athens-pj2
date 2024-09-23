@@ -6,8 +6,8 @@ Este proyecto consiste en el desarrollo de un sitio web e-commerce para una empr
 El sitio incluye diversas páginas con un diseño responsive optimizado para dispositivos móviles. La interfaz ofrece una experiencia de usuario intuitiva y fácil navegación a través de varias secciones.
 
 ## 🛠️ Tecnologías Utilizadas
-![HTML](https://img.shields.io/badge/Html-20232A?style=for-the-badge&logo=html5&logoColor=orange&color=white)
-![CSS](https://img.shields.io/badge/CSS-20232A?style=for-the-badge&logo=css3&logoColor=%233899e3&color=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -30,11 +30,11 @@ Ordenar: Opciones para ordenar por relevancia, fecha de carga, y precio.
 - 📄 **Página de Descripción de Producto (PDP)**
 Detalles del Producto: Incluye nombre, imagen, descripción, y especificaciones técnicas en formato tabla.
 Productos Relacionados: Sección de productos que podrían interesar al usuario.
-- 🛒 **Página de Carrito de Compras**
-Carrito: Listado de productos seleccionados, opciones de envío, y resumen de la compra con totales e impuestos.
+
 
 ## 🌐 Cómo Visualizar el Proyecto
 Para visualizar este proyecto solo debe ingresar al link 👇:
+
 https://athenascode.github.io/Athens-pj2/
 
 ## 👥 Integrantes

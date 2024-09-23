@@ -2,7 +2,7 @@ import { Main } from "../layout/Main";
 import Card from "../components/Card";
 import { adImage, homepageItems } from "../utils/data";
 import AdImage from "../components/AdImage";
-import Banner from "../components/banner";
+import Banner from "../components/Banner";
 export function Home() {
   return (
     <Main>
