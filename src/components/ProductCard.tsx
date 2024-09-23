@@ -6,7 +6,6 @@ export function ProductCard({
   description,
   originalPrice,
   discountedPrice,
-  discountPercentage,
 }: ProductCardPropsType) {
   return (
     <div className="product">
