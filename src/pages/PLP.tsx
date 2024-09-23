@@ -21,7 +21,7 @@ export function PLP() {
       <Breadcrumb links={[linksbread[0],{label:"Lista de "+category, link:"/Athens-pj2/PLP?category="+category} ]}/>
       <main className="main-content container">
         
-        <aside className="filters">
+        <aside className="filtro">
           <Filter filters={categoryFilters} />
         </aside>
         <section className="product-list">

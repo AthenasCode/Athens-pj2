@@ -1,1 +1,30 @@
-{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/components/adimage.tsx","./src/components/banner.tsx","./src/components/breadcrumb.tsx","./src/components/card.tsx","./src/components/coursedetail.tsx","./src/components/filter.tsx","./src/components/footer.tsx","./src/components/header.tsx","./src/components/productcard.tsx","./src/components/subheader.tsx","./src/layout/main.tsx","./src/pages/cart.tsx","./src/pages/home.tsx","./src/pages/pdp.tsx","./src/pages/plp.tsx","./src/routes/routes.tsx","./src/types/breadcrumb.type.ts","./src/types/course.type.ts","./src/types/filter.type.ts","./src/types/productcard.type.ts","./src/types/stakeholders.type.ts","./src/utils/data.ts"],"errors":true,"version":"5.6.2"}
+{
+  "root": [
+    "./src/main.tsx",
+    "./src/vite-env.d.ts",
+    "./src/components/adimage.tsx",
+    "./src/components/banner.tsx",
+    "./src/components/breadcrumb.tsx",
+    "./src/components/card.tsx",
+    "./src/components/coursedetail.tsx",
+    "./src/components/filter.tsx",
+    "./src/components/footer.tsx",
+    "./src/components/header.tsx",
+    "./src/components/productcard.tsx",
+    "./src/components/subheader.tsx",
+    "./src/layout/main.tsx",
+    "./src/pages/cart.tsx",
+    "./src/pages/home.tsx",
+    "./src/pages/pdp.tsx",
+    "./src/pages/plp.tsx",
+    "./src/routes/routes.tsx",
+    "./src/types/breadcrumb.type.ts",
+    "./src/types/course.type.ts",
+    "./src/types/filter.type.ts",
+    "./src/types/productcard.type.ts",
+    "./src/types/stakeholders.type.ts",
+    "./src/utils/data.ts"
+  ],
+  "errors": true,
+  "version": "5.6.2"
+}

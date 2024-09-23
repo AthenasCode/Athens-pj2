@@ -1181,21 +1181,43 @@ export const linksbread = [
 
 export const menuItems = [
   {
-    title: 'Tecnología',
-    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras'],
+
+    title: "Tecnología",
+    items: [
+      { label: "Computadores", link: "/Athens-pj2/PLP?category=computadores" },
+      { label: "Televisores", link: "/Athens-pj2/PLP?category=televisores" },
+      { label: "Audio", link: "/Athens-pj2/PLP?category=audio" },
+      { label: "Video", link: "/Athens-pj2/PLP?category=video" },
+      { label: "Impresión", link: "/Athens-pj2/PLP?category=impresion" },
+      { label: "Cámaras", link: "/Athens-pj2/PLP?category=camaras" }
+    ]
   },
   {
-    title: 'Electrodomésticos',
-    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras'],
+    title: "Electrodomésticos",
+    items: [
+      { label: "Climatización", link: "/Athens-pj2/PLP?category=climatizacion" },
+      { label: "Refrigeración", link: "/Athens-pj2/PLP?category=refrigeracion" },
+      { label: "Lavadoras/Secadoras", link: "/Athens-pj2/PLP?category=lavadoras" }
+    ]
   },
   {
-    title: 'Celulares',
-    items: ['Smartwatch', 'Tabletas', 'Celulares'],
+    title: "Celulares",
+    items: [
+      { label: "Smartwatch", link: "/Athens-pj2/PLP?category=smartwatch" },
+      { label: "Tabletas", link: "/Athens-pj2/PLP?category=tabletas" },
+      { label: "Celulares", link: "/Athens-pj2/PLP?category=celulares" }
+    ]
   },
   {
-    title: 'Hogar',
-    items: ['Salas', 'Comedor', 'Cocina', 'Baño'],
-  },
+    title: "Hogar",
+    items: [
+      { label: "Salas", link: "/Athens-pj2/PLP?category=salas" },
+      { label: "Comedor", link: "/Athens-pj2/PLP?category=comedor" },
+      { label: "Cocina", link: "/Athens-pj2/PLP?category=cocina" },
+      { label: "Baño", link: "/Athens-pj2/PLP?category=baño" }
+    ]
+  }
+
 ];
 
 

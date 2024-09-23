@@ -44,8 +44,7 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="hamburger-menu">
-            <input type="checkbox" id="check" />
+          <div className="hamburger">
             <label htmlFor="check" className="checkbtn">
               {/* Icono de menú removido */}
             </label>
