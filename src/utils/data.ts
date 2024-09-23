@@ -1181,6 +1181,7 @@ export const linksbread = [
 
 export const menuItems = [
   {
+
     title: "Tecnología",
     items: [
       { label: "Computadores", link: "/Athens-pj2/PLP?category=computadores" },
@@ -1216,6 +1217,7 @@ export const menuItems = [
       { label: "Baño", link: "/Athens-pj2/PLP?category=baño" }
     ]
   }
+
 ];
 
 
