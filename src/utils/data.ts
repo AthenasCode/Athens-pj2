@@ -371,3 +371,15 @@ export const adImage = [
   }
 ]
 
+
+export const linksbread = [
+  {
+    label: "Inicio",
+    link: "/Athens-pj2/",
+  },
+  {
+    label: "Lista de productos",
+    link: "/Athens-pj2/PDP",
+  },
+
+]

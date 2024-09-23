@@ -1,12 +1,15 @@
 import { Main } from "../layout/Main";
 import Card from "../components/Card";
-import { adImage, homepageItems } from "../utils/data";
+import Breadcrumb from "../components/Breadcrumb";
+import { adImage, homepageItems, linksbread } from "../utils/data";
 import AdImage from "../components/AdImage";
 import Banner from "../components/banner";
 export function Home() {
   return (
     <Main>
+
       <Banner />
+      <Breadcrumb links={[linksbread[0]]}/>
       <section className="container">
 
 
