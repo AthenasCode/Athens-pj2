@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import arrow from '../assets/arrow-icon.svg';
 
 const SubHeader = () => {
@@ -5,42 +6,42 @@ const SubHeader = () => {
     <div className="subnavbar">
       <div className="item">
         <h3>Tecnología</h3>
-        <img src= {arrow} alt="Icono de Flecha" id="1" />
+        <img src={arrow} alt="Icono de Flecha" id="1" />
         <ul className="dropdown" id="dropdown-1">
-          <li><a href="#">Computadores</a></li>
-          <li><a href="#">Televisores</a></li>
-          <li><a href="#">Audio</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="#">Impresión</a></li>
-          <li><a href="#">Cámaras</a></li>
+          <li><Link to="/Athens-pj2/PLP?category=computadores">Computadores</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=televisores">Televisores</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=audio">Audio</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=video">Video</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=impresion">Impresión</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=camaras">Cámaras</Link></li>
         </ul>
       </div>
       <div className="item">
         <h3>Electrodomésticos</h3>
         <img src={arrow} alt="Icono de Flecha" id="2" />
         <ul className="dropdown" id="dropdown-2">
-          <li><a href="#">Climatización</a></li>
-          <li><a href="#">Refrigeración</a></li>
-          <li><a href="#">Lavadoras/Secadoras</a></li>
+          <li><Link to="/Athens-pj2/PLP?category=climatizacion">Climatización</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=refrigeracion">Refrigeración</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=lavadoras">Lavadoras/Secadoras</Link></li>
         </ul>
       </div>
       <div className="item">
         <h3>Celulares</h3>
         <img src={arrow} alt="Icono de Flecha" id="3" />
         <ul className="dropdown" id="dropdown-3">
-          <li><a href="PLP.html">Smartwatch</a></li>
-          <li><a href="#">Tabletas</a></li>
-          <li><a href="#">Celulares</a></li>
+          <li><Link to="/Athens-pj2/PLP?category=smartwatch">Smartwatch</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=tabletas">Tabletas</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=celulares">Celulares</Link></li>
         </ul>
       </div>
       <div className="item">
         <h3>Hogar</h3>
         <img src={arrow} alt="Icono de Flecha" id="4" />
         <ul className="dropdown" id="dropdown-4">
-          <li><a href="#">Salas</a></li>
-          <li><a href="#">Comedor</a></li>
-          <li><a href="#">Cocina</a></li>
-          <li><a href="#">Baño</a></li>
+          <li><Link to="/Athens-pj2/PLP?category=salas">Salas</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=comedor">Comedor</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=cocina">Cocina</Link></li>
+          <li><Link to="/Athens-pj2/PLP?category=baño">Baño</Link></li>
         </ul>
       </div>
     </div>

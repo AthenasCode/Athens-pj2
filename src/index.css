@@ -858,6 +858,8 @@ p {
 
 .filters {
   height: 950px;
+  width: 300px;
+  
 }
 .filters h2 {
   color: var(--primary-color);
