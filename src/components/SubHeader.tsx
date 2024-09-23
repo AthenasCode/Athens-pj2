@@ -1,9 +1,22 @@
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { FaBars } from 'react-icons/fa';
 import arrow from '../assets/arrow-icon.svg';
+import { menuItems } from "../utils/data";
 
-const SubHeader = () => {
-  return (
+
+const SubHeader: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
+  const toggleMenu = (): void => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const renderDesktopMenu = (): JSX.Element => (
     <div className="subnavbar">
+
       <div className="item">
         <h3>Tecnología</h3>
         <img src={arrow} alt="Icono de Flecha" id="1" />
@@ -43,7 +56,14 @@ const SubHeader = () => {
           <li><Link to="/Athens-pj2/PLP?category=cocina">Cocina</Link></li>
           <li><Link to="/Athens-pj2/PLP?category=baño">Baño</Link></li>
         </ul>
+
       </div>
+    </div>
+  );
+
+  return (
+    <div className="subheader-wrapper">
+      {isMobile ? renderMobileMenu() : renderDesktopMenu()}
     </div>
   );
 };

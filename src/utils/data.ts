@@ -955,6 +955,7 @@ export const productsplp = [
 ];
 
 
+
 export const filterCategories = {
   computadores: [
     { name: "Marca", options: ["ASUS", "HP", "Acer", "Lenovo"] },
@@ -1040,6 +1041,7 @@ export const filterCategories = {
 
 // Define un tipo para las claves válidas de filterCategories
 export type CategoryType = keyof typeof filterCategories;
+
 
 export const homepageItems = [
   {
@@ -1175,3 +1177,25 @@ export const linksbread = [
   },
 
 ]
+
+
+export const menuItems = [
+  {
+    title: 'Tecnología',
+    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras'],
+  },
+  {
+    title: 'Electrodomésticos',
+    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras'],
+  },
+  {
+    title: 'Celulares',
+    items: ['Smartwatch', 'Tabletas', 'Celulares'],
+  },
+  {
+    title: 'Hogar',
+    items: ['Salas', 'Comedor', 'Cocina', 'Baño'],
+  },
+];
+
+
