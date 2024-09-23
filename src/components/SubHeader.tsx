@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
 import arrow from '../assets/arrow-icon.svg';
 
-
-const SubHeader: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-  const toggleMenu = (): void => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const renderDesktopMenu = (): JSX.Element => (
+const SubHeader = () => {
+  return (
     <div className="subnavbar">
-
       <div className="item">
         <h3>Tecnología</h3>
         <img src={arrow} alt="Icono de Flecha" id="1" />
@@ -52,12 +43,9 @@ const SubHeader: React.FC = () => {
           <li><Link to="/Athens-pj2/PLP?category=cocina">Cocina</Link></li>
           <li><Link to="/Athens-pj2/PLP?category=baño">Baño</Link></li>
         </ul>
-
       </div>
     </div>
   );
-
-
 };
 
 export default SubHeader;
