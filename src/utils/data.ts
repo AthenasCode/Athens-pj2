@@ -249,6 +249,7 @@ export const courses = [
     ],
   },
 ];
+
 export const homepageItems = [
   {
     title: "Samsung Galaxy S23",
@@ -383,3 +384,25 @@ export const linksbread = [
   },
 
 ]
+
+
+export const menuItems = [
+  {
+    title: 'Tecnología',
+    items: ['Computadores', 'Televisores', 'Audio', 'Video', 'Impresión', 'Cámaras'],
+  },
+  {
+    title: 'Electrodomésticos',
+    items: ['Climatización', 'Refrigeración', 'Lavadoras/Secadoras'],
+  },
+  {
+    title: 'Celulares',
+    items: ['Smartwatch', 'Tabletas', 'Celulares'],
+  },
+  {
+    title: 'Hogar',
+    items: ['Salas', 'Comedor', 'Cocina', 'Baño'],
+  },
+];
+
+

@@ -8,7 +8,7 @@ const Header = () => {
       <nav>
         <div className="nav-bar">
           <div>
-          <img src= {Logo} alt="Logo Athens" width="200px" />
+            <img src={Logo} alt="Logo Athens" width="200px" />
           </div>
           <div>
             <div className="center-menu">
