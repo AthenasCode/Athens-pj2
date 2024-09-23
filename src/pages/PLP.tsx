@@ -1,5 +1,7 @@
 //import { useState, useEffect } from "react";
+import AdImage from "../components/AdImage";
 import { Main } from "../layout/Main";
+import { adImage } from "../utils/data";
 //import { User } from "../types/stakeholders.type";
 
 export function PLP() {
@@ -39,6 +41,13 @@ export function PLP() {
         <p>
           asgdbyuiasbdiawbfdiauhdniuwand
         </p>
+      </section>
+      <section>
+        <AdImage
+          image={adImage[1].image}
+          text={adImage[1].text}
+          buttonLink={adImage[1].buttonLink}
+        />
       </section>
     </Main>
   );
