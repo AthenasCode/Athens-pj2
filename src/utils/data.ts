@@ -385,6 +385,7 @@ export const linksbread = [
 
 ]
 
+
 export const menuItems = [
   {
     title: 'Tecnología',
@@ -403,4 +404,5 @@ export const menuItems = [
     items: ['Salas', 'Comedor', 'Cocina', 'Baño'],
   },
 ];
+
 
