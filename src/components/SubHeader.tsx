@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FaBars } from 'react-icons/fa';
 import arrow from '../assets/arrow-icon.svg';
+import { menuItems } from "../utils/data";
 
+<<<<<<< Updated upstream
 interface MenuItem {
   title: string;
   items: string[];
@@ -27,6 +29,8 @@ const menuItems: MenuItem[] = [
   }
 ];
 
+=======
+>>>>>>> Stashed changes
 const SubHeader: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
