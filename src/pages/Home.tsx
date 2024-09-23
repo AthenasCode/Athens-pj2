@@ -1,10 +1,12 @@
 import { Main } from "../layout/Main";
 import Card from "../components/Card";
-import { adImage, homepageItems } from "../utils/data";
+import Breadcrumb from "../components/Breadcrumb";
+import { adImage, homepageItems, linksbread } from "../utils/data";
 import AdImage from "../components/AdImage";
 export function Home() {
   return (
     <Main>
+      <Breadcrumb links={[linksbread[0]]}/>
       <section className="container">
         <h2>¡Mira los mejores productos que tenemos!</h2>
         <div className="productsList">
