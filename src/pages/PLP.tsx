@@ -148,6 +148,7 @@ const products: Product[] = [
   },
 ];
 
+
 export function PLP() {
   const [filterText, setFilterText] = useState("");
   const [maxPrice, setMaxPrice] = useState<number | undefined>(undefined);

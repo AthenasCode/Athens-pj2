@@ -1,28 +1,62 @@
-import { Link } from "react-router-dom";
+import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
+import Logo from '../assets/logo.png';
 
-export function Header() {
+
+const Header = () => {
   return (
-    <header >
-      <h1 >
-        ESTO ES EL HEADER
-      </h1>
-      <div >
-        
-        <div >
-          <Link to="/Athens-pj2/">Home</Link>
+    <header>
+      <nav>
+        <div className="nav-bar">
+          <div>
+          <img src= {Logo} alt="Logo Athens" width="200px" />
+          </div>
+          <div>
+            <div className="center-menu">
+              <FaSearch />
+              <input className="flexsearch--input" type="search" placeholder="search" />
+            </div>
+          </div>
+          <div>
+            <div className="right-menu">
+              <FaUser />
+              <a
+                href="#"
+                className="hover-button"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                Mi cuenta
+              </a>
+              <FaShoppingCart />
+              <a
+                href="cart.html"
+                className="hover-button"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
+                Carrito
+              </a>
+            </div>
+          </div>
+          <div className="hamburger-menu">
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" className="checkbtn">
+              {/* Icono de menú removido */}
+            </label>
+            <div className="mobile-menu">
+              {/* Menú móvil sigue presente */}
+            </div>
+          </div>
         </div>
-        <div >
-          <Link to="/Athens-pj2/PDP">PDP</Link>
-        </div>
-        <div >
-          <Link to="/Athens-pj2/PLP">PLP</Link>
-        </div>
-        <div >
-          <Link to="/Athens-pj2/Cart">Cart</Link>
-        </div>
-      </div>
-      
-      <div>Regístrate</div>
+      </nav>
     </header>
   );
-}
+};
+
+export default Header;
