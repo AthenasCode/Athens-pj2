@@ -551,7 +551,7 @@ export const productsplp = [
         originalPrice: 2000000,
         discountedPrice: 1800000,
         discountPercentage: 10,
-        image: "src/assets/apple_watch8.png",
+        image: "/images/apple_watch8.png",
       },
       {
         id: 47,
