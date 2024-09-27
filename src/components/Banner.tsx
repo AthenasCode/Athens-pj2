@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import video from "../assets/video.mp4";
-import img2 from "../assets/imagen2.jpg";
-import imagen from "../assets/imagenn.jpg";
+import video from "../../public/images/video.mp4";
+import img2 from "../../public/images/imagen2.jpg";
+import imagen from "../../public/images/imagenn.jpg";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 interface AdMedia {
   type: 'image' | 'video';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FaBars } from 'react-icons/fa';
 
-import arrow from '../assets/arrow-icon.svg';
+import arrow from '../../public/images/arrow-icon.svg';
 import { menuItems } from "../utils/data";
 import { Link } from "react-router-dom";  // Importar Link de react-router-dom
 

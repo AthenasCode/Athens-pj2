@@ -1,5 +1,5 @@
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
-import Logo from '../assets/logo.png';
+import Logo from '../../public/images/logo.png';
 
 
 const Header = () => {

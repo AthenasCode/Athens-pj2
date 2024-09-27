@@ -11,7 +11,7 @@ export const productsplp = [
         originalPrice: 3500000,
         discountedPrice: 3000000,
         discountPercentage: 14,
-        image: "src/assets/laptop_asus.png",
+        image: "images/laptop_asus.png",
       },
       {
         id: 2,
@@ -22,7 +22,7 @@ export const productsplp = [
         originalPrice: 5000000,
         discountedPrice: 4500000,
         discountPercentage: 10,
-        image: "src/assets/macbook_air.png",
+        image: "images/macbook_air.png",
       },
       {
         id: 3,
@@ -33,7 +33,7 @@ export const productsplp = [
         originalPrice: 2800000,
         discountedPrice: 2500000,
         discountPercentage: 11,
-        image: "src/assets/hp_pavilion.png",
+        image: "images/hp_pavilion.png",
       },
       {
         id: 4,
@@ -44,7 +44,7 @@ export const productsplp = [
         originalPrice: 3200000,
         discountedPrice: 2900000,
         discountPercentage: 9,
-        image: "src/assets/dell_xps.png",
+        image: "images/dell_xps.png",
       },
       {
         id: 5,
@@ -55,7 +55,7 @@ export const productsplp = [
         originalPrice: 4200000,
         discountedPrice: 3800000,
         discountPercentage: 10,
-        image: "src/assets/lenovo_legion.png",
+        image: "images/lenovo_legion.png",
       },
     ],
   },
@@ -71,7 +71,7 @@ export const productsplp = [
         originalPrice: 4000000,
         discountedPrice: 3700000,
         discountPercentage: 8,
-        image: "src/assets/samsung_qled.png",
+        image: "images/samsung_qled.png",
       },
       {
         id: 7,
@@ -82,7 +82,7 @@ export const productsplp = [
         originalPrice: 3800000,
         discountedPrice: 3400000,
         discountPercentage: 10,
-        image: "src/assets/sony_bravia.png",
+        image: "images/sony_bravia.png",
       },
       {
         id: 8,
@@ -93,7 +93,7 @@ export const productsplp = [
         originalPrice: 3500000,
         discountedPrice: 3200000,
         discountPercentage: 9,
-        image: "src/assets/lg_nanocell.png",
+        image: "images/lg_nanocell.png",
       },
       {
         id: 9,
@@ -104,7 +104,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2300000,
         discountPercentage: 8,
-        image: "src/assets/panasonic_viera.png",
+        image: "images/panasonic_viera.png",
       },
       {
         id: 10,
@@ -115,7 +115,7 @@ export const productsplp = [
         originalPrice: 3000000,
         discountedPrice: 2700000,
         discountPercentage: 10,
-        image: "src/assets/hisense_uled.png",
+        image: "images/hisense_uled.png",
       },
     ],
   },
@@ -131,7 +131,7 @@ export const productsplp = [
         originalPrice: 700000,
         discountedPrice: 600000,
         discountPercentage: 14,
-        image: "src/assets/bose_soundlink.png",
+        image: "images/bose_soundlink.png",
       },
       {
         id: 12,
@@ -142,7 +142,7 @@ export const productsplp = [
         originalPrice: 400000,
         discountedPrice: 320000,
         discountPercentage: 20,
-        image: "src/assets/sony_wh1000xm5.png",
+        image: "images/sony_wh1000xm5.png",
       },
       {
         id: 13,
@@ -153,7 +153,7 @@ export const productsplp = [
         originalPrice: 1200000,
         discountedPrice: 1000000,
         discountPercentage: 16,
-        image: "src/assets/jbl_partybox.png",
+        image: "images/jbl_partybox.png",
       },
       {
         id: 14,
@@ -164,7 +164,7 @@ export const productsplp = [
         originalPrice: 300000,
         discountedPrice: 250000,
         discountPercentage: 17,
-        image: "src/assets/sennheiser_hd450.png",
+        image: "images/sennheiser_hd450.png",
       },
       {
         id: 15,
@@ -175,7 +175,7 @@ export const productsplp = [
         originalPrice: 800000,
         discountedPrice: 700000,
         discountPercentage: 12,
-        image: "src/assets/marshall_stanmore.png",
+        image: "images/marshall_stanmore.png",
       },
     ],
   },
@@ -191,7 +191,7 @@ export const productsplp = [
         originalPrice: 1500000,
         discountedPrice: 1300000,
         discountPercentage: 13,
-        image: "src/assets/epson_projector.png",
+        image: "images/epson_projector.png",
       },
       {
         id: 17,
@@ -202,7 +202,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2200000,
         discountPercentage: 12,
-        image: "src/assets/gopro_hero10.png",
+        image: "images/gopro_hero10.png",
       },
       {
         id: 18,
@@ -213,7 +213,7 @@ export const productsplp = [
         originalPrice: 1800000,
         discountedPrice: 1600000,
         discountPercentage: 11,
-        image: "src/assets/benq_projector.png",
+        image: "images/benq_projector.png",
       },
       {
         id: 19,
@@ -224,7 +224,7 @@ export const productsplp = [
         originalPrice: 4500000,
         discountedPrice: 4200000,
         discountPercentage: 7,
-        image: "src/assets/sony_alpha7c.png",
+        image: "images/sony_alpha7c.png",
       },
       {
         id: 20,
@@ -235,7 +235,7 @@ export const productsplp = [
         originalPrice: 1400000,
         discountedPrice: 1200000,
         discountPercentage: 14,
-        image: "src/assets/dji_osmo.png",
+        image: "images/dji_osmo.png",
       },
     ],
   },
@@ -251,7 +251,7 @@ export const productsplp = [
         originalPrice: 500000,
         discountedPrice: 450000,
         discountPercentage: 10,
-        image: "src/assets/hp_laserjet.png",
+        image: "images/hp_laserjet.png",
       },
       {
         id: 22,
@@ -262,7 +262,7 @@ export const productsplp = [
         originalPrice: 350000,
         discountedPrice: 300000,
         discountPercentage: 14,
-        image: "src/assets/canon_pixma.png",
+        image: "images/canon_pixma.png",
       },
       {
         id: 23,
@@ -273,7 +273,7 @@ export const productsplp = [
         originalPrice: 600000,
         discountedPrice: 550000,
         discountPercentage: 8,
-        image: "src/assets/epson_ecotank.png",
+        image: "images/epson_ecotank.png",
       },
       {
         id: 24,
@@ -284,7 +284,7 @@ export const productsplp = [
         originalPrice: 700000,
         discountedPrice: 650000,
         discountPercentage: 7,
-        image: "src/assets/brother_dcp.png",
+        image: "images/brother_dcp.png",
       },
       {
         id: 25,
@@ -295,7 +295,7 @@ export const productsplp = [
         originalPrice: 650000,
         discountedPrice: 600000,
         discountPercentage: 8,
-        image: "src/assets/xerox_b215.png",
+        image: "images/xerox_b215.png",
       },
     ],
   },
@@ -311,7 +311,7 @@ export const productsplp = [
         originalPrice: 6000000,
         discountedPrice: 5500000,
         discountPercentage: 8,
-        image: "src/assets/canon_r5.png",
+        image: "images/canon_r5.png",
       },
       {
         id: 27,
@@ -322,7 +322,7 @@ export const productsplp = [
         originalPrice: 5200000,
         discountedPrice: 4700000,
         discountPercentage: 10,
-        image: "src/assets/nikon_z6ii.png",
+        image: "images/nikon_z6ii.png",
       },
       {
         id: 28,
@@ -333,7 +333,7 @@ export const productsplp = [
         originalPrice: 5000000,
         discountedPrice: 4600000,
         discountPercentage: 8,
-        image: "src/assets/sony_alpha7iii.png",
+        image: "images/sony_alpha7iii.png",
       },
       {
         id: 29,
@@ -344,7 +344,7 @@ export const productsplp = [
         originalPrice: 3500000,
         discountedPrice: 3200000,
         discountPercentage: 9,
-        image: "src/assets/fuji_xt4.png",
+        image: "images/fuji_xt4.png",
       },
       {
         id: 30,
@@ -355,7 +355,7 @@ export const productsplp = [
         originalPrice: 2000000,
         discountedPrice: 1800000,
         discountPercentage: 10,
-        image: "src/assets/olympus_omd.png",
+        image: "images/olympus_omd.png",
       },
     ],
   },
@@ -371,7 +371,7 @@ export const productsplp = [
         originalPrice: 1800000,
         discountedPrice: 1600000,
         discountPercentage: 11,
-        image: "src/assets/samsung_ac.png",
+        image: "images/samsung_ac.png",
       },
       {
         id: 32,
@@ -382,7 +382,7 @@ export const productsplp = [
         originalPrice: 2200000,
         discountedPrice: 2000000,
         discountPercentage: 9,
-        image: "src/assets/lg_inverter_ac.png",
+        image: "images/lg_inverter_ac.png",
       },
       {
         id: 33,
@@ -393,7 +393,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2300000,
         discountPercentage: 8,
-        image: "src/assets/panasonic_ac.png",
+        image: "images/panasonic_ac.png",
       },
       {
         id: 34,
@@ -404,7 +404,7 @@ export const productsplp = [
         originalPrice: 1700000,
         discountedPrice: 1500000,
         discountPercentage: 12,
-        image: "src/assets/midea_ac.png",
+        image: "images/midea_ac.png",
       },
       {
         id: 35,
@@ -415,7 +415,7 @@ export const productsplp = [
         originalPrice: 2400000,
         discountedPrice: 2200000,
         discountPercentage: 8,
-        image: "src/assets/daikin_ac.png",
+        image: "images/daikin_ac.png",
       },
     ],
   },
@@ -431,7 +431,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2200000,
         discountPercentage: 12,
-        image: "src/assets/lg_fridge.png",
+        image: "images/lg_fridge.png",
       },
       {
         id: 37,
@@ -442,7 +442,7 @@ export const productsplp = [
         originalPrice: 3000000,
         discountedPrice: 2700000,
         discountPercentage: 10,
-        image: "src/assets/samsung_twin_cooling.png",
+        image: "images/samsung_twin_cooling.png",
       },
       {
         id: 38,
@@ -453,7 +453,7 @@ export const productsplp = [
         originalPrice: 2800000,
         discountedPrice: 2500000,
         discountPercentage: 11,
-        image: "src/assets/whirlpool_fridge.png",
+        image: "images/whirlpool_fridge.png",
       },
       {
         id: 39,
@@ -464,7 +464,7 @@ export const productsplp = [
         originalPrice: 2600000,
         discountedPrice: 2300000,
         discountPercentage: 12,
-        image: "src/assets/electrolux_frostfree.png",
+        image: "images/electrolux_frostfree.png",
       },
       {
         id: 40,
@@ -475,7 +475,7 @@ export const productsplp = [
         originalPrice: 3200000,
         discountedPrice: 2900000,
         discountPercentage: 9,
-        image: "src/assets/bosch_vitafresh.png",
+        image: "images/bosch_vitafresh.png",
       },
     ],
   },
@@ -491,7 +491,7 @@ export const productsplp = [
         originalPrice: 2200000,
         discountedPrice: 1900000,
         discountPercentage: 13,
-        image: "src/assets/samsung_washer.png",
+        image: "images/samsung_washer.png",
       },
       {
         id: 42,
@@ -502,7 +502,7 @@ export const productsplp = [
         originalPrice: 2100000,
         discountedPrice: 1800000,
         discountPercentage: 14,
-        image: "src/assets/lg_inverter_washer.png",
+        image: "images/lg_inverter_washer.png",
       },
       {
         id: 43,
@@ -513,7 +513,7 @@ export const productsplp = [
         originalPrice: 2300000,
         discountedPrice: 2000000,
         discountPercentage: 13,
-        image: "src/assets/whirlpool_supreme.png",
+        image: "images/whirlpool_supreme.png",
       },
       {
         id: 44,
@@ -524,7 +524,7 @@ export const productsplp = [
         originalPrice: 2400000,
         discountedPrice: 2100000,
         discountPercentage: 12,
-        image: "src/assets/electrolux_ultracare.png",
+        image: "images/electrolux_ultracare.png",
       },
       {
         id: 45,
@@ -535,7 +535,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2200000,
         discountPercentage: 10,
-        image: "src/assets/bosch_homeprofessional.png",
+        image: "images/bosch_homeprofessional.png",
       },
     ],
   },
@@ -562,7 +562,7 @@ export const productsplp = [
         originalPrice: 1500000,
         discountedPrice: 1350000,
         discountPercentage: 10,
-        image: "src/assets/samsung_watch5.png",
+        image: "images/samsung_watch5.png",
       },
       {
         id: 48,
@@ -573,7 +573,7 @@ export const productsplp = [
         originalPrice: 3000000,
         discountedPrice: 2700000,
         discountPercentage: 10,
-        image: "src/assets/garmin_fenix7.png",
+        image: "images/garmin_fenix7.png",
       },
       {
         id: 49,
@@ -584,7 +584,7 @@ export const productsplp = [
         originalPrice: 1200000,
         discountedPrice: 1100000,
         discountPercentage: 8,
-        image: "src/assets/fitbit_versa3.png",
+        image: "images/fitbit_versa3.png",
       },
       {
         id: 50,
@@ -595,7 +595,7 @@ export const productsplp = [
         originalPrice: 1400000,
         discountedPrice: 1300000,
         discountPercentage: 7,
-        image: "src/assets/huawei_watchgt3.png",
+        image: "images/huawei_watchgt3.png",
       },
     ],
   },
@@ -611,7 +611,7 @@ export const productsplp = [
         originalPrice: 3000000,
         discountedPrice: 2800000,
         discountPercentage: 7,
-        image: "src/assets/ipad_pro.png",
+        image: "images/ipad_pro.png",
       },
       {
         id: 52,
@@ -622,7 +622,7 @@ export const productsplp = [
         originalPrice: 2000000,
         discountedPrice: 1800000,
         discountPercentage: 10,
-        image: "src/assets/samsung_tab_s7.png",
+        image: "images/samsung_tab_s7.png",
       },
       {
         id: 53,
@@ -633,7 +633,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2300000,
         discountPercentage: 8,
-        image: "src/assets/surface_pro7.png",
+        image: "images/surface_pro7.png",
       },
       {
         id: 54,
@@ -644,7 +644,7 @@ export const productsplp = [
         originalPrice: 1200000,
         discountedPrice: 1100000,
         discountPercentage: 8,
-        image: "src/assets/lenovo_tab_p11.png",
+        image: "images/lenovo_tab_p11.png",
       },
       {
         id: 55,
@@ -655,7 +655,7 @@ export const productsplp = [
         originalPrice: 2200000,
         discountedPrice: 2000000,
         discountPercentage: 9,
-        image: "src/assets/huawei_matepad.png",
+        image: "images/huawei_matepad.png",
       },
     ],
   },
@@ -671,7 +671,7 @@ export const productsplp = [
         originalPrice: 3500000,
         discountedPrice: 3200000,
         discountPercentage: 8,
-        image: "src/assets/iphone_13.png",
+        image: "images/iphone_13.png",
       },
       {
         id: 57,
@@ -682,7 +682,7 @@ export const productsplp = [
         originalPrice: 3000000,
         discountedPrice: 2800000,
         discountPercentage: 7,
-        image: "src/assets/samsung_s21.png",
+        image: "images/samsung_s21.png",
       },
       {
         id: 58,
@@ -693,7 +693,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2300000,
         discountPercentage: 8,
-        image: "src/assets/google_pixel6.png",
+        image: "images/google_pixel6.png",
       },
       {
         id: 59,
@@ -704,7 +704,7 @@ export const productsplp = [
         originalPrice: 2400000,
         discountedPrice: 2200000,
         discountPercentage: 8,
-        image: "src/assets/oneplus_9.png",
+        image: "images/oneplus_9.png",
       },
       {
         id: 60,
@@ -715,7 +715,7 @@ export const productsplp = [
         originalPrice: 2000000,
         discountedPrice: 1900000,
         discountPercentage: 5,
-        image: "src/assets/xiaomi_mi11.png",
+        image: "images/xiaomi_mi11.png",
       },
     ],
   },
@@ -731,7 +731,7 @@ export const productsplp = [
         originalPrice: 1500000,
         discountedPrice: 1300000,
         discountPercentage: 13,
-        image: "src/assets/sofa_cama.png",
+        image: "images/sofa_cama.png",
       },
       {
         id: 62,
@@ -742,7 +742,7 @@ export const productsplp = [
         originalPrice: 800000,
         discountedPrice: 700000,
         discountPercentage: 12,
-        image: "src/assets/mesa_centro.png",
+        image: "images/mesa_centro.png",
       },
       {
         id: 63,
@@ -753,7 +753,7 @@ export const productsplp = [
         originalPrice: 400000,
         discountedPrice: 350000,
         discountPercentage: 12,
-        image: "src/assets/silla_comedor.png",
+        image: "images/silla_comedor.png",
       },
       {
         id: 64,
@@ -764,7 +764,7 @@ export const productsplp = [
         originalPrice: 600000,
         discountedPrice: 550000,
         discountPercentage: 8,
-        image: "src/assets/estante_libros.png",
+        image: "images/estante_libros.png",
       },
       {
         id: 65,
@@ -775,7 +775,7 @@ export const productsplp = [
         originalPrice: 1200000,
         discountedPrice: 1100000,
         discountPercentage: 8,
-        image: "src/assets/mueble_tv.png",
+        image: "images/mueble_tv.png",
       },
     ],
   },
@@ -791,7 +791,7 @@ export const productsplp = [
         originalPrice: 2500000,
         discountedPrice: 2300000,
         discountPercentage: 8,
-        image: "src/assets/mesa_comedor.png",
+        image: "images/mesa_comedor.png",
       },
       {
         id: 67,
@@ -802,7 +802,7 @@ export const productsplp = [
         originalPrice: 1200000,
         discountedPrice: 1100000,
         discountPercentage: 8,
-        image: "src/assets/sillas_comedor.png",
+        image: "images/sillas_comedor.png",
       },
       {
         id: 68,
@@ -813,7 +813,7 @@ export const productsplp = [
         originalPrice: 1500000,
         discountedPrice: 1400000,
         discountPercentage: 7,
-        image: "src/assets/mueble_bar.png",
+        image: "images/mueble_bar.png",
       },
       {
         id: 69,
@@ -824,7 +824,7 @@ export const productsplp = [
         originalPrice: 2000000,
         discountedPrice: 1900000,
         discountPercentage: 5,
-        image: "src/assets/vitrina_comedor.png",
+        image: "images/vitrina_comedor.png",
       },
       {
         id: 70,
@@ -835,7 +835,7 @@ export const productsplp = [
         originalPrice: 1000000,
         discountedPrice: 950000,
         discountPercentage: 5,
-        image: "src/assets/carro_comedor.png",
+        image: "images/carro_comedor.png",
       },
     ],
   },
@@ -851,7 +851,7 @@ export const productsplp = [
         originalPrice: 800000,
         discountedPrice: 700000,
         discountPercentage: 12,
-        image: "src/assets/horno_electrico.png",
+        image: "images/horno_electrico.png",
       },
       {
         id: 72,
@@ -862,7 +862,7 @@ export const productsplp = [
         originalPrice: 600000,
         discountedPrice: 550000,
         discountPercentage: 8,
-        image: "src/assets/microondas_samsung.png",
+        image: "images/microondas_samsung.png",
       },
       {
         id: 73,
@@ -873,7 +873,7 @@ export const productsplp = [
         originalPrice: 250000,
         discountedPrice: 220000,
         discountPercentage: 12,
-        image: "src/assets/licuadora_oster.png",
+        image: "images/licuadora_oster.png",
       },
       {
         id: 74,
@@ -883,7 +883,7 @@ export const productsplp = [
         originalPrice: 300000,
         discountedPrice: 280000,
         discountPercentage: 7,
-        image: "src/assets/batidora_mano.png",
+        image: "images/batidora_mano.png",
       },
       {
         id: 75,
@@ -894,7 +894,7 @@ export const productsplp = [
         originalPrice: 150000,
         discountedPrice: 140000,
         discountPercentage: 7,
-        image: "src/assets/cafetera_electrica.png",
+        image: "images/cafetera_electrica.png",
       },
     ],
   },
@@ -909,7 +909,7 @@ export const productsplp = [
         originalPrice: 300000,
         discountedPrice: 280000,
         discountPercentage: 7,
-        image: "src/assets/espejo_bano.png",
+        image: "images/espejo_bano.png",
       },
       {
         id: 77,
@@ -919,7 +919,7 @@ export const productsplp = [
         originalPrice: 150000,
         discountedPrice: 140000,
         discountPercentage: 7,
-        image: "src/assets/juego_toallas.png",
+        image: "images/juego_toallas.png",
       },
       {
         id: 78,
@@ -929,7 +929,7 @@ export const productsplp = [
         originalPrice: 800000,
         discountedPrice: 750000,
         discountPercentage: 6,
-        image: "src/assets/mueble_bano.png",
+        image: "images/mueble_bano.png",
       },
       {
         id: 79,
@@ -938,7 +938,7 @@ export const productsplp = [
         originalPrice: 150000,
         discountedPrice: 140000,
         discountPercentage: 7,
-        image: "src/assets/ducha_mano.png",
+        image: "images/ducha_mano.png",
       },
       {
         id: 80,
@@ -948,7 +948,7 @@ export const productsplp = [
         originalPrice: 100000,
         discountedPrice: 90000,
         discountPercentage: 10,
-        image: "src/assets/organizador_bano.png",
+        image: "images/organizador_bano.png",
       },
     ],
   },
@@ -1047,7 +1047,7 @@ export const homepageItems = [
   {
     title: "Samsung Galaxy S23",
     description: "El Samsung Galaxy S23 es un smartphone de alta gama con una pantalla Dynamic AMOLED de 6.1 pulgadas, procesador Snapdragon 8 Gen 2, y una cámara triple de 50MP para fotos y vídeos impresionantes.",
-    image:"https://athenascode.github.io/Athens/img/product1.webp",
+    image:"images/product1.webp",
     original_price: 900000,
     discounted_price: 750000,
     discount: 17
@@ -1055,7 +1055,7 @@ export const homepageItems = [
   {
     title: "iPad Air (2022)",
     description: "El iPad Air de 2022 cuenta con una pantalla Liquid Retina de 10.9 pulgadas, el chip M1 de Apple y soporte para el Apple Pencil de segunda generación, ofreciendo un rendimiento excepcional para todas tus tareas.",
-    image:"https://athenascode.github.io/Athens/img/IPad_Air.png",
+    image:"images/IPad_Air.png",
     original_price: 800000,
     discounted_price: 650000,
     discount: 19
@@ -1063,7 +1063,7 @@ export const homepageItems = [
   {
     title: "Sony WH-1000XM5",
     description: "Los auriculares Sony WH-1000XM5 ofrecen cancelación de ruido líder en la industria, audio de alta resolución y comodidad durante todo el día, ideales para una experiencia de escucha inmersiva.",
-    image:"https://athenascode.github.io/Athens/img/product3.avif",
+    image:"images/product3.avif",
     original_price: 400000,
     discounted_price: 320000,
     discount: 20
@@ -1071,7 +1071,7 @@ export const homepageItems = [
   {
     title: "Dyson V15 Detect",
     description: "La aspiradora Dyson V15 Detect ofrece una potente succión, tecnología de detección de polvo y una batería de larga duración, ideal para mantener tu hogar limpio con facilidad.",
-    image:"https://athenascode.github.io/Athens/img/product4.jpg",
+    image:"images/product4.jpg",
     original_price: 600000,
     discounted_price: 480000,
     discount: 20
@@ -1079,7 +1079,7 @@ export const homepageItems = [
   {
     title: "Apple MacBook Air M2",
     description: "El MacBook Air M2 presenta un diseño delgado, el chip M2 de Apple para un rendimiento ultrarrápido y una pantalla Retina de 13.6 pulgadas, ofreciendo potencia y portabilidad en un solo dispositivo.",
-    image:"https://athenascode.github.io/Athens/img/product5.png",
+    image:"images/product5.png",
     original_price: 1200000,
     discounted_price: 1000000,
     discount: 17
@@ -1087,7 +1087,7 @@ export const homepageItems = [
   {
     title: "Bose QuietComfort 45",
     description: "Los auriculares Bose QuietComfort 45 ofrecen una cancelación de ruido superior, sonido de alta calidad y comodidad prolongada, perfectos para viajes o uso diario.",
-    image:"https://athenascode.github.io/Athens/img/product6.png",
+    image:"images/product6.png",
     original_price: 350000,
     discounted_price: 280000,
     discount: 20
@@ -1095,7 +1095,7 @@ export const homepageItems = [
   {
     title: "Samsung Galaxy Tab S8",
     description: "La Galaxy Tab S8 ofrece una pantalla AMOLED de 11 pulgadas, el procesador Snapdragon 8 Gen 1 y soporte para el S Pen, ideal para productividad y entretenimiento.",
-    image:"https://athenascode.github.io/Athens/img/product7.webp",
+    image:"images/product7.webp",
     original_price: 700000,
     discounted_price: 580000,
     discount: 17
@@ -1103,7 +1103,7 @@ export const homepageItems = [
   {
     title: "LG OLED55CXPUA",
     description: "El televisor LG OLED55CXPUA cuenta con una pantalla OLED 4K de 55 pulgadas, procesador α9 Gen 4 AI y soporte para Dolby Vision y Dolby Atmos.",
-    image:"https://athenascode.github.io/Athens/img/product8.avif",
+    image:"images/product8.avif",
     original_price: 2000000,
     discounted_price: 1800000,
     discount: 10
@@ -1111,7 +1111,7 @@ export const homepageItems = [
   {
     title: "Apple Watch Series 8",
     description: "El Apple Watch Series 8 ofrece una pantalla Always-On Retina, sensores avanzados para monitoreo de salud y actividad, y un diseño elegante y duradero.",
-    image:"https://athenascode.github.io/Athens/img/product9.png",
+    image:"images/product9.png",
     original_price: 450000,
     discounted_price: 350000,
     discount: 22
@@ -1119,7 +1119,7 @@ export const homepageItems = [
   {
     title: "Nest Learning Thermostat",
     description: "El Nest Learning Thermostat de Google ajusta automáticamente la temperatura de tu hogar, aprendiendo tus preferencias y optimizando el consumo de energía para un confort eficiente.",
-    image:"https://athenascode.github.io/Athens/img/product10.avif",
+    image:"images/product10.avif",
     original_price: 300000,
     discounted_price: 240000,
     discount: 20
@@ -1127,7 +1127,7 @@ export const homepageItems = [
   {
     title: "Sony PlayStation 5",
     description: "La PlayStation 5 de Sony ofrece gráficos de última generación, tiempos de carga reducidos y una biblioteca extensa de juegos, brindando una experiencia de juego inmersiva y emocionante.",
-    image:"https://athenascode.github.io/Athens/img/product11.webp",
+    image:"images/product11.webp",
     original_price: 900000,
     discounted_price: 750000,
     discount: 17
@@ -1135,7 +1135,7 @@ export const homepageItems = [
   {
     title: "Dyson Pure Cool TP04",
     description: "El Dyson Pure Cool TP04 es un purificador de aire y ventilador todo en uno, que captura contaminantes y elimina olores con su filtro HEPA y carbono, mientras proporciona un flujo de aire refrescante.",
-    image:"https://athenascode.github.io/Athens/img/product12.png",
+    image:"images/product12.png",
     original_price: 500000,
     discounted_price: 400000,
     discount: 20
@@ -1144,22 +1144,22 @@ export const homepageItems = [
 
 export const adImage = [
   {
-    image: "https://athenascode.github.io/Athens/img/venta.jpg",
+    image: "images/venta.jpg",
     text: "Nuestro nuevo Apple Watch tiene el 50% de descuento, ¡Descubre muchos más y aprovecha nuestros descuentos!",
     buttonLink: "#"
   },
   {
-    image: "https://athenascode.github.io/Athens/img/imagenbanner.png",
+    image: "images/imagenbanner.png",
     text: "iPhones en descuento, ¡Descubre muchos más y aprovecha nuestros descuentos!",
     buttonLink: "#"
   },
   {
-    image: "https://athenascode.github.io/Athens/img/image1.jpg",
+    image: "images/image1.jpg",
     text: "Grandes descuentos en tablets, teléfonos y mucha más tecnología",
     buttonLink: "#"
   },
   {
-    image: "https://athenascode.github.io/Athens/img/image2.jpg",
+    image: "images/image2.jpg",
     text: "Grandes descuentos en tablets, teléfonos y mucha más tecnología",
     buttonLink: "#"
   }

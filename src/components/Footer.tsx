@@ -1,9 +1,9 @@
-import transferIcon from '../assets/transfer-icon.svg';
-import EfectivoIcon from '../assets/efectivo-icon.svg';
-import tarjetaIcon from '../assets/tarjeta-icon.svg';
-import facebook from '../assets/facebook.svg';
-import github from '../assets/github-icon.svg';
-import instagram from '../assets/instagram.svg';
+import transferIcon from '../../public/images/transfer-icon.svg';
+import EfectivoIcon from '../../public/images/efectivo-icon.svg';
+import tarjetaIcon from '../../public/images/tarjeta-icon.svg';
+import facebook from '../../public/images/facebook.svg';
+import github from '../../public/images/github-icon.svg';
+import instagram from '../../public/images/instagram.svg';
 
 export function Footer() {
   return (
