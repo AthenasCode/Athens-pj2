@@ -5,16 +5,16 @@ import { Cart } from "../pages/Cart";
 
 export const router = createBrowserRouter([
   {
-    path: "/Athens-pj2/",
+    path: "/",
     element: <Home />,
   },
   {
-    path: "/Athens-pj2/PLP",
+    path: "/PLP",
     element: <PLP />,
   },
 
   {
-    path: "/Athens-pj2/Cart",
+    path: "/Cart",
     element: <Cart/>,
   },
 ]);

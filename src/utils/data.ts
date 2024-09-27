@@ -1169,11 +1169,11 @@ export const adImage = [
 export const linksbread = [
   {
     label: "Inicio",
-    link: "/Athens-pj2/",
+    link: "/",
   },
   {
     label: "Lista de productos",
-    link: "/Athens-pj2/PDP",
+    link: "/PDP",
   },
 
 ]
@@ -1184,37 +1184,37 @@ export const menuItems = [
 
     title: "Tecnología",
     items: [
-      { label: "Computadores", link: "/Athens-pj2/PLP?category=computadores" },
-      { label: "Televisores", link: "/Athens-pj2/PLP?category=televisores" },
-      { label: "Audio", link: "/Athens-pj2/PLP?category=audio" },
-      { label: "Video", link: "/Athens-pj2/PLP?category=video" },
-      { label: "Impresión", link: "/Athens-pj2/PLP?category=impresion" },
-      { label: "Cámaras", link: "/Athens-pj2/PLP?category=camaras" }
+      { label: "Computadores", link: "/PLP?category=computadores" },
+      { label: "Televisores", link: "/PLP?category=televisores" },
+      { label: "Audio", link: "/PLP?category=audio" },
+      { label: "Video", link: "/PLP?category=video" },
+      { label: "Impresión", link: "/PLP?category=impresion" },
+      { label: "Cámaras", link: "/PLP?category=camaras" }
     ]
   },
   {
     title: "Electrodomésticos",
     items: [
-      { label: "Climatización", link: "/Athens-pj2/PLP?category=climatizacion" },
-      { label: "Refrigeración", link: "/Athens-pj2/PLP?category=refrigeracion" },
-      { label: "Lavadoras/Secadoras", link: "/Athens-pj2/PLP?category=lavadoras" }
+      { label: "Climatización", link: "/PLP?category=climatizacion" },
+      { label: "Refrigeración", link: "/PLP?category=refrigeracion" },
+      { label: "Lavadoras/Secadoras", link: "/PLP?category=lavadoras" }
     ]
   },
   {
     title: "Celulares",
     items: [
-      { label: "Smartwatch", link: "/Athens-pj2/PLP?category=smartwatch" },
-      { label: "Tabletas", link: "/Athens-pj2/PLP?category=tabletas" },
-      { label: "Celulares", link: "/Athens-pj2/PLP?category=celulares" }
+      { label: "Smartwatch", link: "/PLP?category=smartwatch" },
+      { label: "Tabletas", link: "/PLP?category=tabletas" },
+      { label: "Celulares", link: "/PLP?category=celulares" }
     ]
   },
   {
     title: "Hogar",
     items: [
-      { label: "Salas", link: "/Athens-pj2/PLP?category=salas" },
-      { label: "Comedor", link: "/Athens-pj2/PLP?category=comedor" },
-      { label: "Cocina", link: "/Athens-pj2/PLP?category=cocina" },
-      { label: "Baño", link: "/Athens-pj2/PLP?category=baño" }
+      { label: "Salas", link: "/PLP?category=salas" },
+      { label: "Comedor", link: "/PLP?category=comedor" },
+      { label: "Cocina", link: "/PLP?category=cocina" },
+      { label: "Baño", link: "/PLP?category=baño" }
     ]
   }
 
