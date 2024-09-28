@@ -20,4 +20,8 @@ export default class API {
         const response = await fetch(`${this.url}/adImage`);
         return response.json();
     }
+    static async getHomePageItems() {
+        const response = await fetch(`${this.url}/homepageItems`);
+        return response.json();
+    }
 }
