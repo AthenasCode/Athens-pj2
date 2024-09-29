@@ -1,5 +1,5 @@
 export default class API {
-    static url = "https://web-fe-html-css-athens-prj2-api.onrender.com/";
+    static url = "https://web-fe-html-css-athens-prj2-api.onrender.com";
     static async getMenuItems() {
         const response = await fetch(`${this.url}/menuItems`);
         return response.json();
