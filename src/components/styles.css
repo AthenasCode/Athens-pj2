@@ -493,6 +493,7 @@ h4{
     font-size: 28px;
 }
 .bannerSale {
+  margin-top: 37px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1052,7 +1053,8 @@ p{
 /* Main Content Layout */
 .main-content {
   display: flex;
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 0;
 }
 
 /* Filters Section */
@@ -1120,7 +1122,7 @@ p{
 .product-list select {
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid var(--secondary-color);
 }
@@ -1137,7 +1139,7 @@ p{
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
-  margin: 10px;
+  margin:5px;
   padding-right: 0px;
 }
 
