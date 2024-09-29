@@ -24,4 +24,8 @@ export default class API {
         const response = await fetch(`${this.url}/homepageItems`);
         return response.json();
     }
+    static async Banner() {
+        const response = await fetch(`${this.url}/banner`);
+        return response.json();
+    }
 }
