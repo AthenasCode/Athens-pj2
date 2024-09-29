@@ -5,4 +5,6 @@ export type ProductCardPropsType = {
     originalPrice: number;
     discountedPrice: number;
     discountPercentage: number;
+    category: string;
+    productId: string;
   };

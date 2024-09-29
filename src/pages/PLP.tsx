@@ -85,6 +85,8 @@ export function PLP() {
                       originalPrice={product.originalPrice}
                       discountedPrice={product.discountedPrice}
                       discountPercentage={product.discountPercentage}
+                      category={selectedCategory?.categorie}
+                      productId={product.id}
                     />
                   );
                 })}

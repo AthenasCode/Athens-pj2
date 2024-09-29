@@ -6,10 +6,12 @@ export function ProductCard({
   description,
   originalPrice,
   discountedPrice,
+  category,
+  productId,
 }: ProductCardPropsType) {
   return (
     <div className="product">
-      <a href="pdp.html">
+      <a href={`/PDP?product=${productId}&category=${category}`}>
         <img src={image} alt={title} />
         <h3>{title}</h3>
         <p>Calificación: ★★★★☆ 4.5</p>
