@@ -3,10 +3,10 @@ import { useLocation } from "react-router-dom";
 import ProductCard from "../components/ProductCard"; // Importa el componente ProductCard
 import { Main } from "../layout/Main";
 import { Filter } from "../components/Filter";
-import { linksbread, productsplp } from "../utils/data"; // Importar el archivo de filtros
+import { linksbread } from "../utils/data"; // Importar el archivo de filtros
 import { CategoryType, filterCategories } from "../utils/data"; // Importar tipo y filtros
 import Breadcrumb from "../components/Breadcrumb";
-import { SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Product } from "../types/product.type";
 import API from "../api/API";
 // Importa el componente Error y la imagen del spinner
