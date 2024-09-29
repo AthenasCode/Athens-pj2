@@ -7,14 +7,21 @@ import Banner from "../components/Banner";
 import { useEffect, useState } from "react";
 import API from "../api/API";
 import { Product } from "../types/product.type";
-import spinner from "../../public/images/Loading_2.gif";
+import spinner from "../../public/images/Loading_2.gif";  
+import Error from "../components/Error";
 export function Home() {
   const [homepageItems, setHomepageItems] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   useEffect(() => {
     API.getHomePageItems().then((data) => {
       setHomepageItems(data);
       setLoading(false);
+    }).catch((error) => {
+      setLoading(false);
+      setError(true);
+      setErrorMessage(error.message);
     });
   }, []);
   return (
@@ -27,6 +34,8 @@ export function Home() {
         <div className="productsList">
           {loading ? (
             <img src={spinner} alt="Cargando..." />
+          ) : error ? (
+            <Error message={errorMessage} />
           ) : (
             homepageItems.map((product: Product) => (
               <Card // Asegúrate de añadir una key única
