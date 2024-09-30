@@ -12,6 +12,8 @@ import API from "../api/API";
 // Importa el componente Error y la imagen del spinner
 import Error from "../components/Error";
 import spinner from "../../public/images/Loading_2.gif"; // Asegúrate de que la ruta sea correcta
+import { adImage} from "../utils/data";
+import AdImage from "../components/AdImage";
 
 export function PLP() {
   const location = useLocation();
@@ -95,6 +97,11 @@ export function PLP() {
           </>
         )}
       </main>
+      <AdImage
+        image={adImage[1].image}
+        text={adImage[1].text}
+        buttonLink={adImage[1].buttonLink}
+      />
     </Main>
   );
 }

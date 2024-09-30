@@ -1144,12 +1144,12 @@ export const homepageItems = [
 
 export const adImage = [
   {
-    image: "images/venta.jpg",
-    text: "Nuestro nuevo Apple Watch tiene el 50% de descuento, ¡Descubre muchos más y aprovecha nuestros descuentos!",
+    image: "images/bannerhome.jpg",
+    text: "Nuestro nuevo Iphone 13 tiene el 50% de descuento, ¡Compra ya!",
     buttonLink: "#"
   },
   {
-    image: "images/imagenbanner.png",
+    image: "images/banner.jpeg",
     text: "iPhones en descuento, ¡Descubre muchos más y aprovecha nuestros descuentos!",
     buttonLink: "#"
   },
