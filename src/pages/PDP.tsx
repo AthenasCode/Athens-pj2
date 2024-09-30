@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { Main } from "../layout/Main";
-import { CategoryType, linksbread } from "../utils/data";
+import { linksbread } from "../utils/data";
 import Breadcrumb from "../components/Breadcrumb";
-import { Product } from "../types/product.type";
 import API from "../api/API";
 import Error from "../components/Error";
-import Card from "../components/Card";
 import ProductCard from "../components/ProductCard";
 
 export function PDP() {
