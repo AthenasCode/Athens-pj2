@@ -4,26 +4,27 @@ import Breadcrumb from "../components/Breadcrumb";
 import { adImage,linksbread } from "../utils/data";
 import AdImage from "../components/AdImage";
 import Banner from "../components/Banner";
-import { useEffect, useState } from "react";
-import API from "../api/API";
+import { useGetHomeProducts } from "../hooks/useGetHomeProducts";
 import { Product } from "../types/product.type";
 import spinner from "../../public/images/Loading_2.gif";  
 import Error from "../components/Error";
+//import { useEffect, useState } from "react";
+//import API from "../api/API";
 export function Home() {
-  const [homepageItems, setHomepageItems] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-  useEffect(() => {
-    API.getHomePageItems().then((data) => {
-      setHomepageItems(data);
-      setLoading(false);
-    }).catch((error) => {
-      setLoading(false);
-      setError(true);
-      setErrorMessage(error.message);
-    });
-  }, []);
+  //const [homepageItems2, setHomepageItems] = useState<Product[]>([]);
+  //const [isLoading, setLoading] = useState(true);
+  //const [isError, setError] = useState(false);
+  //useEffect(() => {
+  //  API.getHomePageItems().then((data) => {
+  //    setHomepageItems(data);
+  //    setLoading(false);
+  //  }).catch(() => {
+  //    setLoading(false);
+  //    setError(true);
+  //  });
+  //}, []);
+  const { isLoading, isSuccess, isError, data: homepageItems } = useGetHomeProducts();
+
   return (
     <Main>
 
@@ -32,11 +33,13 @@ export function Home() {
       <section className="container">
         <h2>¡Mira los mejores productos que tenemos!</h2>
         <div className="productsList">
-          {loading ? (
+          {isLoading && (
             <img src={spinner} alt="Cargando..." />
-          ) : error ? (
-            <Error message={errorMessage} />
-          ) : (
+          ) }
+          { isError && (
+            <Error message={"Error cargando los productos"} />
+          )}
+          {!isLoading && !isError && isSuccess && homepageItems && (
             homepageItems.map((product: Product) => (
               <Card // Asegúrate de añadir una key única
                 image={"" + product.image}

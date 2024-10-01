@@ -1,10 +1,8 @@
 // src/components/Filter.tsx
+import { FilterOption } from "../types/filter.type";
 
 type FilterProps = {
-  filters: {
-    name: string;
-    options: string[];
-  }[];
+  filters: FilterOption[];
 };
 
 export function Filter({ filters }: FilterProps) {

@@ -25,7 +25,10 @@ export interface Product {
     name: string;
     options: string[];
   }
-  
+  export interface Filters {
+    categoria: string;
+    filtros: FilterOption[];
+  }
   export interface FilterSidebarProps {
     filterCategories: FilterOption[];
     selectedFilters: string[];

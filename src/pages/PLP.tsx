@@ -4,11 +4,14 @@ import ProductCard from "../components/ProductCard"; // Importa el componente Pr
 import { Main } from "../layout/Main";
 import { Filter } from "../components/Filter";
 import { linksbread } from "../utils/data"; // Importar el archivo de filtros
-import { CategoryType, filterCategories } from "../utils/data"; // Importar tipo y filtros
+import { filterCategories } from "../utils/data"; // Importar tipo y filtros
 import Breadcrumb from "../components/Breadcrumb";
 import { useEffect, useState } from "react";
-import { Product } from "../types/product.type";
-import API from "../api/API";
+import { CategoryProduct } from "../types/product.type";
+import { Filters } from "../types/filter.type";
+import { useGetPLPProducts } from "../hooks/useGetPLPProducts";
+//import { useGetFilters } from "../hooks/useGetFilters";
+//import API from "../api/API";
 // Importa el componente Error y la imagen del spinner
 import Error from "../components/Error";
 import spinner from "../../public/images/Loading_2.gif"; // Asegúrate de que la ruta sea correcta
@@ -18,32 +21,43 @@ import AdImage from "../components/AdImage";
 export function PLP() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const category = params.get("category") as CategoryType | null; // Validar que category sea de tipo CategoryType
-  const [error, setError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState<Product[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<Product | any>(undefined);
-  const [categoryFilters, setCategoryFilters] = useState<any[]>([]);
+  const category = params.get("category") ; // Validar que category sea de tipo CategoryType
+  //const [error, setError] = useState(false);
+  //const [errorMessage, setErrorMessage] = useState("");
+  //const [loading, setLoading] = useState(true);
+  //const [products, setProducts] = useState<Product[]>([]);
+  //const [selectedCategory, setSelectedCategory] = useState<Product | any>(undefined);
+  //const [categoryFilters, setCategoryFilters] = useState<any[]>([]);
+ //const [Filters, setFilters] = useState<any[]>([]);
 
-  useEffect(() => {
-    API.getPLPproducts()
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-        
-        const found = data.find((cat: any) => cat.categorie === category);
-        setSelectedCategory(found);
-        
-        const filters = category ? filterCategories[category] : [];
-        setCategoryFilters(filters);
-      })
-      .catch((error: { message: string }) => {
-        setLoading(false);
-        setError(true);
-        setErrorMessage(error.message);
-      });
-  }, [category]);
+ //useEffect(() => {
+ //  API.getFilterCategories().then((data) => {
+ //    setFilters(data);
+ //    setLoading(false);
+ //  }).catch((error) => {
+ //    setLoading(false);
+ //    setError(true);
+ //    setErrorMessage(error.message);
+ //  });
+ //}, []);
+ const { data: products, isLoading, isError, isSuccess } = useGetPLPProducts(category!);
+// const { data: filterCategories } = useGetFilters(category!);
+
+ const [selectedCategory, setSelectedCategory] = useState<CategoryProduct >();
+ const [categoryFilters, setCategoryFilters] = useState<any>([]);
+
+ useEffect(() => {
+   if (products && isSuccess) {
+    const found = products.find((cat: CategoryProduct) => cat.categorie === category);
+
+    setSelectedCategory(found);
+
+    const filters = category&&filterCategories ?  filterCategories.find((cat: Filters) => cat.categoria === category) : null;
+    if (filters){
+      setCategoryFilters(filters.filtros);
+    }
+   }
+ }, [products, category, isSuccess]);
   return (
     <Main>
       <Breadcrumb
@@ -56,11 +70,13 @@ export function PLP() {
         ]}
       />
       <main className="main-content container">
-        {error ? (
-          <Error message={errorMessage} />
-        ) : loading ? (
+        {isError && (
+          <Error message={"Error cargando la lista de productos"} />
+        )}
+        { isLoading && (
           <img src={spinner} alt="Cargando..." />
-        ) : (
+        )}
+        { !isLoading && !isError && isSuccess && products && (
           <>
             <aside className="filtro">
               <Filter filters={categoryFilters} />
@@ -77,7 +93,9 @@ export function PLP() {
                 </select>
               </div>
               <div className="products">
-                {selectedCategory?.products.map((product: any) => {
+                {
+                selectedCategory?.products.map((product: any) => {
+
                   return (
                     <ProductCard
                       key={product.id}
