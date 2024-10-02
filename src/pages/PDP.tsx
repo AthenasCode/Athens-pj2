@@ -28,6 +28,7 @@ export function PDP() {
           const foundProduct = categoryData.products.find((product: any) => product.id === productId);
           
           if (foundProduct) {
+            console.log(foundProduct)
             setProduct(foundProduct);
             setRelatedProducts(getRelatedProducts(categoryData.products));
           } 
@@ -52,7 +53,11 @@ export function PDP() {
           links={[
             linksbread[0],
             {
-              label: "Descripcion del producto",
+              label: "Lista de " + category,
+              link: "PLP?category=" + category,
+            },
+            {
+              label: product?.title,
               link: "PDP?product=" + productId + "&category=" + category,
             },
           ]}
