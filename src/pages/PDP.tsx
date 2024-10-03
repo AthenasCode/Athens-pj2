@@ -5,7 +5,6 @@ import Breadcrumb from "../components/Breadcrumb";
 import Error from "../components/Error";
 import ProductCard from "../components/ProductCard";
 import { useGetPLPProducts } from "../hooks/useGetPLPProducts";
-import { Product } from "../types/product.type";
 
 export function PDP() {
   const params = new URLSearchParams(location.search);
