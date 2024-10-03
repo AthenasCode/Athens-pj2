@@ -22,27 +22,7 @@ export function PLP() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const category = params.get("category") ; // Validar que category sea de tipo CategoryType
-  //const [error, setError] = useState(false);
-  //const [errorMessage, setErrorMessage] = useState("");
-  //const [loading, setLoading] = useState(true);
-  //const [products, setProducts] = useState<Product[]>([]);
-  //const [selectedCategory, setSelectedCategory] = useState<Product | any>(undefined);
-  //const [categoryFilters, setCategoryFilters] = useState<any[]>([]);
- //const [Filters, setFilters] = useState<any[]>([]);
-
- //useEffect(() => {
- //  API.getFilterCategories().then((data) => {
- //    setFilters(data);
- //    setLoading(false);
- //  }).catch((error) => {
- //    setLoading(false);
- //    setError(true);
- //    setErrorMessage(error.message);
- //  });
- //}, []);
  const { data: products, isLoading, isError, isSuccess } = useGetPLPProducts(category!);
-// const { data: filterCategories } = useGetFilters(category!);
-
  const [selectedCategory, setSelectedCategory] = useState<CategoryProduct >();
  const [categoryFilters, setCategoryFilters] = useState<any>([]);
 
