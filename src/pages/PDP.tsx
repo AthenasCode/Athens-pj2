@@ -9,7 +9,7 @@ import spinner from "../../public/images/Loading_2.gif";
 
 export function PDP() {
   const params = new URLSearchParams(location.search);
-  const productId = parseInt(params.get("product") || "0");
+  const productId = params.get("product");
   const category = params.get("category") || "";
   
   const { data: products, isLoading, isError, error } = useGetPLPProducts(category);
@@ -33,6 +33,7 @@ export function PDP() {
 
   const getRelatedProducts = (products: any[], currentProductId: number) => {
     return products.filter((prod: any) => prod.id !== currentProductId).slice(0, 3);
+
   };
 
   return (
@@ -120,6 +121,7 @@ export function PDP() {
             ))
           )}
         </section>
+
       </div>
     </Main>
   );

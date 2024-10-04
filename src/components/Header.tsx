@@ -1,5 +1,6 @@
 import { FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 import Logo from '../../public/images/logo.png';
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -31,8 +32,8 @@ const Header = () => {
                 Mi cuenta
               </a>
               <FaShoppingCart />
-              <a
-                href="cart.html"
+              <Link
+                to ="/Cart"
                 className="hover-button"
                 style={{
                   display: "flex",
@@ -41,7 +42,7 @@ const Header = () => {
                 }}
               >
                 Carrito
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hamburger">
