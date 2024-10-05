@@ -35,6 +35,41 @@ export function PDP() {
     return products.filter((prod: any) => prod.id !== currentProductId).slice(0, 3);
   };
 
+  // Función para agregar al carrito
+  const addToCart = () => {
+    if (!product) return; // Verificar que el producto esté disponible
+
+    const existingCart = localStorage.getItem('cart'); // Obtener carrito de localStorage
+    let cart = existingCart ? JSON.parse(existingCart) : []; // Parsear el carrito o iniciar uno vacío
+
+    // Crear un nuevo producto para agregar al carrito
+    const productToAdd = {
+      id: product.id,
+      title: product.title,
+      image: product.image,
+      description: product.description,
+      originalPrice: product.originalPrice,
+      discountedPrice: product.discountedPrice,
+      category,
+      quantity: 1, // Cantidad predeterminada
+    };
+
+    // Verificar si el producto ya existe en el carrito
+    const index = cart.findIndex((prod: any) => prod.id === product.id);
+    if (index >= 0) {
+      // Si el producto ya está en el carrito, aumentar la cantidad
+      cart[index].quantity += 1;
+    } else {
+      // Si no está en el carrito, agregarlo
+      cart.push(productToAdd);
+    }
+
+    // Guardar el carrito actualizado en localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log(`Producto añadido al carrito: ${product.title}`);
+    console.log('Carrito actualizado:', cart);
+  };
+
   return (
     <Main>
       <div className="container">
@@ -58,8 +93,14 @@ export function PDP() {
           <div>
             <section className="product-main">
               <h1>{product?.title}</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet modi voluptatibus doloremque nihil obcaecati! Impedit, vitae? Expedita nesciunt exercitationem ea minus sit? Minima voluptate, porro corrupti ea eum impedit..</p>
-              <button className="secondary">AÑADIR AL CARRITO</button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                amet modi voluptatibus doloremque nihil obcaecati! Impedit,
+                vitae? Expedita nesciunt exercitationem ea minus sit? Minima
+                voluptate, porro corrupti ea eum impedit..
+              </p>
+              {/* Botón con la funcionalidad de agregar al carrito */}
+              <button className="secondary" onClick={addToCart}>AÑADIR AL CARRITO</button>
             </section>
           </div>
         </section>
