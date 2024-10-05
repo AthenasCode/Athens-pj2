@@ -1,7 +1,6 @@
 import { Footer } from "../components/Footer";
 import Header from '../components/Header';
 import  SubHeader  from "../components/SubHeader";
-import '../components/styles.css';
 
 export const Main = ({ children }: { children: React.ReactNode }) => {
   return (

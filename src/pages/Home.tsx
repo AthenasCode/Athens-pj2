@@ -8,21 +8,8 @@ import { useGetHomeProducts } from "../hooks/useGetHomeProducts";
 import { Product } from "../types/product.type";
 import spinner from "../../public/images/Loading_2.gif";  
 import Error from "../components/Error";
-//import { useEffect, useState } from "react";
-//import API from "../api/API";
 export function Home() {
-  //const [homepageItems2, setHomepageItems] = useState<Product[]>([]);
-  //const [isLoading, setLoading] = useState(true);
-  //const [isError, setError] = useState(false);
-  //useEffect(() => {
-  //  API.getHomePageItems().then((data) => {
-  //    setHomepageItems(data);
-  //    setLoading(false);
-  //  }).catch(() => {
-  //    setLoading(false);
-  //    setError(true);
-  //  });
-  //}, []);
+
   const { isLoading, isSuccess, isError, data: homepageItems } = useGetHomeProducts();
 
   return (

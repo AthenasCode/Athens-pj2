@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import  { useState, useEffect, useMemo, JSXElementConstructor, Key, ReactElement, ReactNode } from 'react';
 import { Main } from '../layout/Main';
 import { Link } from 'react-router-dom';
 import Summary from '../components/Summary';
@@ -13,30 +13,24 @@ export function Cart() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
-  const handleQuantityChange = (productId, newQuantity) => {
-    setCart((prevCart) =>
+  const handleQuantityChange = (productId: any, newQuantity: number) => {
+    setCart((prevCart: any[]) =>
       prevCart.map((product) =>
         product.id === productId ? { ...product, quantity: newQuantity } : product
       )
     );
   };
 
-  const handleShippingChange = (productId, shippingOption) => {
-    setCart((prevCart) =>
-      prevCart.map((product) =>
-        product.id === productId ? { ...product, shippingOption } : product
-      )
-    );
-  };
+
 
   // Nueva función para eliminar un producto del carrito
-  const handleRemoveProduct = (productId) => {
-    setCart((prevCart) => prevCart.filter((product) => product.id !== productId));
+  const handleRemoveProduct = (productId: any) => {
+    setCart((prevCart: any[]) => prevCart.filter((product) => product.id !== productId));
   };
 
   const subtotal = useMemo(() => {
     return cart.reduce(
-      (acc, product) => acc + (product.discountedPrice || 0) * (product.quantity || 1),
+      (acc: number, product: { discountedPrice: any; quantity: any; }) => acc + (product.discountedPrice || 0) * (product.quantity || 1),
       0
     );
   }, [cart]);
@@ -55,11 +49,11 @@ export function Cart() {
           <h2>Tu Carrito</h2>
           <div className="products-list">
             {cart.length > 0 ? (
-              cart.map((product) => (
+              cart.map((product: { id: Key | null | undefined; category: any; image: string | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined; discountedPrice: number; quantity: any; }) => (
                 <div key={product.id} className="cart-item">
                   <div className="product-image">
                     <Link to={`/PDP?product=${product.id}&category=${product.category}`}>
-                      <img src={product.image} alt={product.title} />
+                      <img src={product.image}  />
                     </Link>
                   </div>
                   <div className="product-info">
@@ -69,7 +63,7 @@ export function Cart() {
                       </Link>
                     </h3>
                     <p>
-                      Precio con descuento: $
+                      Precio: $
                       {product.discountedPrice
                         ? product.discountedPrice.toFixed(2)
                         : '0.00'}
@@ -117,55 +111,7 @@ export function Cart() {
           />
         )}
       </div>
-
-      <style jsx>{`
-        .containercart {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .productscart {
-          flex: 1;
-          padding: 10px;
-        }
-        .cart-item {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          padding: 15px;
-          border: 1px solid #ddd;
-          border-radius: 5px;
-          margin-bottom: 15px;
-        }
-        .product-image img {
-          max-width: 100px;
-          margin-right: 15px;
-        }
-        .product-info {
-          flex: 1;
-        }
-        .shipping-options {
-          margin: 10px 0;
-        }
-        .shipping-options label {
-          display: block;
-          margin-bottom: 5px;
-        }
-        .quantity-selector {
-          margin-top: 10px;
-        }
-        .remove-button {
-          margin-top: 10px;
-          padding: 5px 10px;
-          background-color: #ff4d4d;
-          color: white;
-          border: none;
-          border-radius: 3px;
-          cursor: pointer;
-        }
-        .remove-button:hover {
-          background-color: #ff3333;
-        }
-      `}</style>
+        
     </Main>
   );
 }

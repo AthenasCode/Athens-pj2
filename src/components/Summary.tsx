@@ -1,7 +1,14 @@
-import React from 'react';
+interface SummaryProps {
+  subtotal: number;
+  shippingCost: number;
+  discountBlackFriday: number;
+  totalDiscounts: number;
+  iva: number;
+  total: number;
+}
 
-const Summary = ({ subtotal, shippingCost, discountBlackFriday, totalDiscounts, iva, total }) => {
-  const formatNumber = (number) =>
+const Summary = ({ subtotal, shippingCost, discountBlackFriday, totalDiscounts, iva, total }: SummaryProps) => {
+  const formatNumber = (number: number) =>
     typeof number === 'number' && !isNaN(number) ? number.toLocaleString('es-ES') : '0';
 
   return (

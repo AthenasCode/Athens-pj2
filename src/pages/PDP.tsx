@@ -9,7 +9,7 @@ import spinner from "../../public/images/Loading_2.gif";
 
 export function PDP() {
   const params = new URLSearchParams(location.search);
-  const productId = params.get("product");
+  const productId = parseInt(params.get("product") || "0");
   const category = params.get("category") || "";
   
   const { data: products, isLoading, isError, error } = useGetPLPProducts(category);
@@ -33,7 +33,6 @@ export function PDP() {
 
   const getRelatedProducts = (products: any[], currentProductId: number) => {
     return products.filter((prod: any) => prod.id !== currentProductId).slice(0, 3);
-
   };
 
   return (
@@ -59,7 +58,7 @@ export function PDP() {
           <div>
             <section className="product-main">
               <h1>{product?.title}</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet modi voluptatibus doloremque nihil obcaecati! Impedit, vitae? Expedita nesciunt exercitationem ea minus sit? Minima voluptate, porro corrupti ea eum impedit..</p>
               <button className="secondary">AÑADIR AL CARRITO</button>
             </section>
           </div>
@@ -121,7 +120,6 @@ export function PDP() {
             ))
           )}
         </section>
-
       </div>
     </Main>
   );

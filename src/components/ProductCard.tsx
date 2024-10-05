@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProductCardPropsType } from '../types/productcard.type';
 
 interface ProductCardPropsTypeWithLocalCart extends ProductCardPropsType {}
@@ -54,7 +53,7 @@ export function ProductCard({
   return (
     <div className="product">
       <a href={`/PDP?product=${productId}&category=${category}`}>
-        <img src={image} alt={title} />
+        <img className="productImage"  src={image} alt={title} />
         <h3>{title}</h3>
         <p>Calificación: ★★★★☆ 4.5</p>
         <p>{description}</p>

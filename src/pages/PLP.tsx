@@ -1,4 +1,3 @@
-// src/pages/PLP.tsx
 import { useLocation } from "react-router-dom";
 import ProductCard from "../components/ProductCard"; // Importa el componente ProductCard
 import { Main } from "../layout/Main";
@@ -10,9 +9,6 @@ import { useEffect, useState } from "react";
 import { CategoryProduct } from "../types/product.type";
 import { Filters } from "../types/filter.type";
 import { useGetPLPProducts } from "../hooks/useGetPLPProducts";
-//import { useGetFilters } from "../hooks/useGetFilters";
-//import API from "../api/API";
-// Importa el componente Error y la imagen del spinner
 import Error from "../components/Error";
 import spinner from "../../public/images/Loading_2.gif"; // Asegúrate de que la ruta sea correcta
 import { adImage} from "../utils/data";

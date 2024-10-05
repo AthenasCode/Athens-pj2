@@ -8,9 +8,11 @@ const Header = () => {
     <header>
       <nav>
         <div className="nav-bar">
-          <div>
+        <div>
+          <Link to="/">
             <img src={Logo} alt="Logo Athens" width="200px" />
-          </div>
+          </Link>
+        </div>
           <div>
             <div className="center-menu">
               <FaSearch />
